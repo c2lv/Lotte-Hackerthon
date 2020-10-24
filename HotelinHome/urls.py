@@ -24,4 +24,13 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name="index"),
+    path('about/', views.about, name="about"),
+    path('details/', views.details, name="details"),
+    path('blog/', views.blog, name="blog"),
+    path('contact/', views.contact, name="contact"),
+    path('gallery/', views.gallery, name="gallery"),
+    path('menu/', views.menu, name="menu"),
+    path('reservation/', views.reservation, name="reservation"),
+    path('stuff/', views.stuff, name="stuff"),
 ]
+

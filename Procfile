@@ -1,0 +1,1 @@
+web: gunicorn HotelinHome.wsgi

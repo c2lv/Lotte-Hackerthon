@@ -37,6 +37,8 @@ urlpatterns = [
     path('pierre/', views.pierre, name="pierre"),
     path('cheon/', views.cheon, name="cheon"),
     path('posts/',include('posts.urls') ),
+    path('pages/',include('pages.urls') ),
+
 
 ]
 

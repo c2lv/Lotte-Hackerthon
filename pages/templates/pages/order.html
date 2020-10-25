@@ -1,0 +1,179 @@
+{% load static %}
+
+
+  <head>
+    <title>HOTEL &mdash; IN HOME</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700"> 
+
+    <link rel="stylesheet" href="{% static 'css2/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css2/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css2/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'css2/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css2/owl.theme.default.min.css' %}">
+
+
+    <link rel="stylesheet" href="{% static 'css2/aos.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css2/style.css' %}">
+    
+  </head>
+  <body>
+  
+  <div class="site-wrap">
+
+    <!-- semi nav -->
+    <div class="bg-light py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-0"><a href="#">Home</a> <span class="mx-2 mb-0">/</span> <a href='{% url "pages:cart" %}'>Cart</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">Order</strong></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-5 mb-md-0">
+            <h2 class="h3 mb-3 text-black">Billing Details</h2>
+            <div class="p-3 p-lg-5 border">
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label for="c-name" class="text-black">Name <span class="text-danger">*</span></label>
+                  <input type="text" value="이연준"class="form-control" id="c_name" name="c_name">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label for="c_address" class="text-black">Address <span class="text-danger">*</span></label>
+                  <input type="text" value="서울시 강남구 영동대로111길10" class="form-control" id="c_address" name="c_address" placeholder="Street address">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <input type="text" value="230동 3101호" class="form-control" placeholder="Apartment, suite, unit etc. (optional)">
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label for="c-phone" class="text-black">Phone <span class="text-danger">*</span></label>
+                  <input type="text" value="010-1990-2319" class="form-control" id="c_phone" name="c_phone" placeholder="Phone Number">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="c_ship_different_address" class="text-black" data-toggle="collapse" href="#ship_different_address" role="button" aria-expanded="false" aria-controls="ship_different_address"><input type="checkbox" value="1" id="c_ship_different_address" onclick="showAddress()"> Ship To A Different Address?</label>
+                <div class="collapse" id="ship_different_address">
+                  <div class="py-2">
+
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                          <label for="c-name" class="text-black">Name <span class="text-danger">*</span></label>
+                          <input type="text" class="form-control" id="c_name" name="c_name">
+                        </div>
+                      </div>
+        
+                      <div class="form-group row">
+                        <div class="col-md-12">
+                          <label for="c_address" class="text-black">Address <span class="text-danger">*</span></label>
+                          <input type="text" class="form-control" id="c_address" name="c_address" placeholder="Street address">
+                        </div>
+                      </div>
+        
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Apartment, suite, unit etc. (optional)">
+                      </div>
+        
+                      <div class="form-group row">
+                        <div class="col-md-12">
+                          <label for="c-phone" class="text-black">Phone <span class="text-danger">*</span></label>
+                          <input type="text" class="form-control" id="c_phone" name="c_phone" placeholder="Phone Number">
+                        </div>
+                      </div>
+        
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="c_order_notes" class="text-black">Order Notes</label>
+                <textarea name="c_order_notes" id="c_order_notes" cols="30" rows="5" class="form-control" placeholder="Write your notes here..."></textarea>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6">
+            
+            <div class="row mb-5">
+              <div class="col-md-12">
+                <h2 class="h3 mb-3 text-black">Your Order</h2>
+                <div class="p-3 p-lg-5 border">
+                  <table class="table site-block-order-table mb-5">
+                    <thead>
+                      <th>Food</th>
+                      <th>Total</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Australian Organic Beef <strong class="mx-2">x</strong> 1</td>
+                        <td>$49.00</td>
+                      </tr>
+                      <tr>
+                        <td>Tiener Schnitze <strong class="mx-2">x</strong>   1</td>
+                        <td>$49.00</td>
+                      </tr>
+                      <tr>
+                        <td class="text-black font-weight-bold"><strong>Cart Subtotal</strong></td>
+                        <td class="text-black">$98.00</td>
+                      </tr>
+                      <tr>
+                        <td class="text-black font-weight-bold"><strong>Discount</strong></td>
+                        <td class="text-black">$0</td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-black font-weight-bold"><strong>Order Total</strong></td>
+                        <td class="text-black font-weight-bold"><strong>$98.00</strong></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                    <div class="border p-3 mb-3">
+                        <label for="c_pay1" class="text-black" data-toggle="collapse" href="#pay1" role="button" aria-expanded="false" aria-controls="pay1"><input type="checkbox" name="checkbox1" value="a1" id="c_pay1" onclick="Checkbox(this)"> 카드결제 </label></br>
+                    </div>
+
+                    <div class="border p-3 mb-3">
+                        <label for="c_pay2" class="text-black" data-toggle="collapse" href="#pay2" role="button" aria-expanded="false" aria-controls="pay2"><input type="checkbox" name="checkbox1" value="a2" id="c_pay2" onclick="Checkbox(this)"> 무통장입금 </label>
+                    </div>
+
+                    <div class="border p-3 mb-5">
+                        <label for="c_pay3" class="text-black" data-toggle="collapse" href="#pay3" role="button" aria-expanded="false" aria-controls="pay3"><input type="checkbox" name="checkbox1" value="a3" id="c_pay3" onclick="Checkbox(this)"> 현장결제 </label>
+                
+                    </div>
+
+                  <div class="form-group">
+                    <a class="btn btn-primary btn-lg py-3 btn-block" href='{% url "pages:thankyou" %}'>Order</a>
+
+                    <!-- <button class="btn btn-primary btn-lg py-3 btn-block" onclick="window.location='thankyou.html'">Order</button> -->
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- </form> -->
+      </div>
+    </div>
+
+  </div>
+  <script src="{% static 'js2/order.js' %}"></script>
+
+    
+  </body>

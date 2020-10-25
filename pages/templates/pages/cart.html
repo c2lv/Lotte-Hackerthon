@@ -1,0 +1,256 @@
+{% load static %}
+
+
+  <head>
+    <title>HOTEL &mdash; IN HOME</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700"> 
+
+    <link rel="stylesheet" href="{% static 'css2/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css2/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css2/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'css2/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css2/owl.theme.default.min.css' %}">
+
+
+    <link rel="stylesheet" href="{% static 'css2/aos.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css2/style.css' %}">
+
+  </head>
+  <body>
+  
+  <div class="site-wrap">
+
+    <!-- semi nav -->
+    <div class="bg-light py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-0"><a href="#">Home</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">Cart</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-5">
+          <form class="col-md-12" method="post">
+            <div class="site-blocks-table">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th class="product-thumbnail">Image</th>
+                    <th class="product-name">Food</th>
+                    <th class="product-price">Price</th>
+                    <th class="product-quantity">Quantity</th>
+                    <th class="product-total">Total</th>
+                    <th class="product-remove">Remove</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="product-thumbnail">
+                      <img src="{% static 'images/food1.png' %}"  alt="Image" class="img-fluid">
+                    </td>
+                    <td class="product-name">
+                      <h2 class="h5 text-black">Australian Organic Beef</h2>
+                    </td>
+                    <td>$49.00</td>
+                    <td>
+                      <!-- <div class="input-group mb-3" style="max-width: 120px;">
+                        <div class="input-group-prepend">
+                          <button class="btn btn-outline-primary js-btn-minus" onclick="form_btn(-1)" type="button">&minus;</button>
+                        </div>
+                        <input type="text" class="form-control text-center" id="text" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-primary js-btn-plus" onclick="form_btn(1)" type="button">&plus;</button>
+                        </div>
+                      </div> -->
+                      <div class="input-group-prepend">
+                        <button class="btn btn-outline-primary js-btn-minus" onclick="minus()" type="button">&minus;</button>
+                      </div>
+                      <input type="text" class="form-control text-center" id="count1" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-primary js-btn-plus" onclick="plus()" type="button">&plus;</button>
+                      </div>
+
+
+                    </td>
+                    <td>  <!-- 총 가격1 -->
+                      <input id="total_count"  value="49.00" class="form-control text-center" type="text" hidden=hidden/>
+                      <input id="total_count_view" value="49.00" class="form-control text-center" type="text" readonly/>
+                    </td>
+                    <td><a href="#" class="btn btn-primary btn-sm">X</a></td>
+                  </tr>
+
+                  <tr>
+                    <td class="product-thumbnail">
+                      <img src="{% static 'images/food2.png' %}"  alt="Image" class="img-fluid">
+                    </td>
+                    <td class="product-name">
+                      <h2 class="h5 text-black">Tiener Schnitze</h2>
+                    </td>
+                    <td>$49.00</td>
+                    <td>
+                      <div class="input-group mb-3" style="max-width: 120px;">
+                        <!-- <div class="input-group-prepend">
+                          <button class="btn btn-outline-primary js-btn-minus" onclick="form_btn2(-1)" type="button">&minus;</button>
+                        </div>
+                        <input type="text" class="form-control text-center" id="text2" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-primary js-btn-plus" onclick="form_btn2(1)" type="button">&plus;</button>
+                        </div> -->
+                        <div class="input-group-prepend">
+                          <button class="btn btn-outline-primary js-btn-minus" onclick="minus2()" type="button">&minus;</button>
+                        </div>
+                        <input type="text" class="form-control text-center" id="count2" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-primary js-btn-plus" onclick="plus2()" type="button">&plus;</button>
+                        </div>
+
+                      </div>
+
+                    </td>
+                    <td>  <!-- 총 가격2 -->
+                      <input id="total_count2"  value="49.00" class="form-control text-center" type="text" hidden=hidden/>
+                      <input id="total_count_view2" value="49.00" class="form-control text-center" type="text" readonly/>
+                    </td>
+                    <td><a href="#" class="btn btn-primary btn-sm">X</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </form>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row mb-5">
+              <div class="col-md-6 mb-3 mb-md-0">
+                <button class="btn btn-primary btn-sm btn-block" onclick="recalculate()">Update Cart</button>
+              </div>
+              <div class="col-md-6">
+                <button class="btn btn-outline-primary btn-sm btn-block">Continue Shopping</button> <!-- 메뉴페이지로 이동 -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label class="text-black h4" for="coupon">Coupon</label>
+                <p>Enter your coupon code if you have one.</p>
+              </div>
+              <div class="col-md-8 mb-3 mb-md-0">
+                <input type="text" class="form-control py-3" id="coupon" placeholder="Coupon Code">
+              </div>
+              <div class="col-md-4">
+                <button class="btn btn-primary btn-sm" onclick="coupon()">Apply Coupon</button>
+              </div>
+              <div id="disp_coupon" class="col-md-12" style="display:none;">10% coupon!</div>
+
+            </div> <br>
+            <!-- Tip -->
+            <div class="row">
+              <div class="col-md-12">
+                <label class="text-black h4" for="coupon">Tip</label>
+                <p>Would you like to tip?</p>
+              </div>
+              <div class="col-md-8 mb-3 mb-md-0">
+                <button class="btn btn-primary btn-sm" onclick="fivedollar()">$5</button>
+                <button class="btn btn-primary btn-sm" onclick="tendollar()">$10</button>
+
+                <!-- <label for="c_fivedollar" class="text-black" data-toggle="collapse" href="#fivedollar" role="button" aria-expanded="false" aria-controls="fivedollar"><input type="checkbox" name="checkbox1" value="a1" id="c_fivedollar" onclick="Checkbox(this)"> $5 </label></br>
+                <label for="c_tendollar" class="text-black" data-toggle="collapse" href="#tendollar" role="button" aria-expanded="false" aria-controls="tendollar"><input type="checkbox" name="checkbox1" value="a2" id="c_tendollar" onclick="Checkbox(this)"> $10 </label> -->
+              </div>
+              <!-- <div class="col-md-4">
+                <button class="btn btn-primary btn-sm">Apply Your Tip</button>
+              </div> -->
+            </div> <br>
+            <!-- Message -->
+            <div class="row">
+              <div class="col-md-12">
+                <label class="text-black h4" for="coupon">Message</label>
+                <p>Please write what you want to say.</p>
+              </div>
+              <div class="col-md-8 mb-3 mb-md-0">
+                <input type="text" class="form-control py-3" id="coupon" placeholder="Thanks for the good food.">
+              </div>
+              <div class="col-md-4">
+                <button class="btn btn-primary btn-sm" onclick="alert('Complete!')">Apply Message</button>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col-md-6 pl-5">
+            <div class="row justify-content-end">
+              <div class="col-md-7">
+                <div class="row">
+                  <div class="col-md-12 text-right border-bottom mb-5">
+                    <h3 class="text-black h4 text-uppercase">Cart Totals</h3>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <span class="text-black">Subtotal</span>
+                  </div>
+                  <div class="col-md-6 text-right">
+                    <strong class="text-black">
+                      <!-- <input id="subtotal"  value="98.00" class="form-control text-right" type="text" hidden=hidden/> -->
+                      <input id="subtotal_view" value="98.00" class="form-control text-right" type="text" readonly/>                      
+                    </strong>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <span class="text-black">Discount</span>
+                  </div>
+                  <div class="col-md-6 text-right">
+                    <strong class="text-black">
+                      <!-- <input id="discount"  value="0" class="form-control text-right" type="text" hidden=hidden/> -->
+                      <input id="discount_view" value="0" class="form-control text-right" type="text" readonly/>                      
+                    </strong>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <span class="text-black">Tip</span>
+                  </div>
+                  <div class="col-md-6 text-right">
+                    <strong class="text-black">
+                      <input id="tip_view" value="0" class="form-control text-right" type="text" readonly/>                      
+                    </strong>
+                  </div>
+                </div>
+
+
+                <div class="row mb-5">
+                  <div class="col-md-6">
+                    <span class="text-black">Total</span>
+                  </div>
+                  <div class="col-md-6 text-right">
+                    <strong class="text-black">
+                      <!-- <input id="realTotal"  value="98.00" class="form-control text-right" type="text" hidden=hidden/> -->
+                      <input id="realTotal_view" value="98.00" class="form-control text-right" type="text" readonly/>                      
+                    </strong>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <!-- <button class="btn btn-primary btn-lg py-3 btn-block" onclick="window.location='{% url "pages:cart" %}'>ORDER</button> -->
+                    <a class="btn btn-primary btn-lg py-3 btn-block" href='{% url "pages:order" %}'>Order</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+   
+  <script src="{% static 'js2/cart.js' %}"></script>
+  </body>

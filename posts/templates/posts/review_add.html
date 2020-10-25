@@ -1,0 +1,89 @@
+{% load static %}
+
+
+<head>
+    <title>HOTEL &mdash; IN HOME</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700"> 
+
+    <link rel="stylesheet" href="{% static 'css2/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css2/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css2/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'css2/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css2/owl.theme.default.min.css' %}">
+
+
+    <link rel="stylesheet" href="{% static 'css2/aos.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css2/style.css' %}">
+    
+  </head>
+  <body>
+  
+  <div class="site-wrap">
+
+    <div class="bg-light py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-0"><a href="index.html">Home</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">Add Review</strong></div>
+        </div>
+      </div>
+    </div>  
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="h3 mb-3 text-black">Review</h2>
+          </div>
+          <div class="col-md-12">
+
+            <form action="{% url 'posts:create' %}" method="POST" enctype="multipart/form-data">        
+                {% csrf_token %}
+                      
+              <div class="p-3 p-lg-5 border">
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <label for="c_fchef" class="text-black">Chef <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="c_fchef" name="chef"  placeholder="Allen">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <label for="c_menu" class="text-black">Menu <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="c_menu" name="menu" placeholder="steak">
+                  </div>
+                </div>
+                <div class="form-group">
+                    <label for="c_review" class="text-black">Review <span class="text-danger">*</span></label>
+                    <textarea name="content" id="c_review" cols="30" rows="5" class="form-control" placeholder="Write your review here..."></textarea>
+                </div>
+    
+
+                <!-- <div class="form-group row">
+                  <div class="col-md-12">
+                    <label for="c_message" class="text-black">Message </label>
+                    <textarea name="c_message" id="c_message" cols="30" rows="7" class="form-control"></textarea>
+                  </div>
+                </div> -->
+                <div class="form-group">
+                    <input type="file" name="image">
+                </div>
+        
+                <div class="form-group">
+                    <input type="submit" value="Add" class="btn btn-primary btn-lg py-3 btn-block">
+
+                    <!-- <a class="btn btn-primary btn-lg py-3 btn-block" href='{% url "posts:review" %}'>Add</a> -->
+                </div>
+              </div>
+            </form>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  </body>

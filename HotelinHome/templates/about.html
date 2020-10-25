@@ -57,6 +57,10 @@
 								<a class="dropdown-item" href="{% url 'reservation' %}">Reservation</a>
 								<a class="dropdown-item" href="{% url 'stuff' %}">Stuff</a>
 								<a class="dropdown-item" href="{% url 'gallery' %}">Gallery</a>
+								<a class="dropdown-item" href="{% url 'cheon' %}">천덕상</a>
+								<a class="dropdown-item" href="{% url 'yeo' %}">여경옥</a>
+								<a class="dropdown-item" href="{% url 'yannick' %}">야닉알레노</a>
+								<a class="dropdown-item" href="{% url 'pierre' %}">피에르가니에르</a>
 							</div>
 						</li>
 						<li class="nav-item dropdown">
@@ -91,157 +95,56 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-6">
-					<img src="{% static 'images/about-img.jpg' %}" alt="" class="img-fluid">
+					<img src="{% static 'images/restaurant.jpg' %}" alt="" class="img-fluid">
 				</div>
 				<div class="col-lg-6 col-md-6 text-center">
 					<div class="inner-column">
-						<h1>Welcome To <span>Yamifood Restaurant</span></h1>
-						<h4>Little Story</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-						<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. Sed aliquam metus lorem, a pellentesque tellus pretium a. Nulla placerat elit in justo vestibulum, et maximus sem pulvinar.</p>
+						<h1>당신과 우리 <span>정성을 담아, 호텔에서 집까지</span></h1><br><br>
+						<h4>중식</h4><br><br>
+						<br>
+						<br>
+						<br>
+						<h2><em><b>우리는 당신의 ‘사랑’을 응원합니다.</b></em></h2>
+						<h4>좋은 사람에게는 언제나 좋은 순간들만 주고 싶은 따뜻한 마음을 표현해보세요.<br>
+							호텔 인 홈은 한 걸음 뒤에서 묵묵히 당신의 사랑을 돕겠습니다.<br>
+							롯데 호텔에서의 식사가 행복한 기억이었듯이, 호텔 인 홈과 함께라면 오늘의 선택은 행복으로 가득 채워질 것입니다. <br>
+							사랑하는 가족과 연인, 친구에게 특별한 하루를 선물해보는 것은 어떨까요? <br>
+							맛있는 식사와 즐거운 분위기는 영원히 잊지 못할 소중한 기억으로 남을 것입니다. <br>
+							언젠가 떠올렸을 때 기분 좋은 추억으로 입가에 미소가 그려지도록 노력하겠습니다.</h4>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<h2 style="text-align:right;"><em><b>우리는 당신의 ‘자유’를 응원합니다.</b></em></h2> 
+						<h4 style="text-align:right;">가만히 눈을 감고 마음의 소리에 귀 기울여보면 그 안에서 폭발적인 열정으로 고동치는 심장박동을 들을 수 있을 것입니다. <br>
+							일상에서 벗어나 새로운 곳으로의 모험은 언제나 기대되는 일입니다. <br>
+							롯데 호텔은 그 모험의 종착지에서 언제나 든든한 동반자 역할을 해왔습니다. <br>
+							코로나로 무기력한 일상이 반복되는 요즈음, 다시 한 번 당신의 열정에 문을 두드릴 시간입니다. <br>
+							롯데 호텔과 함께 한 행복한 추억들을 떠올리며, 호텔에서 느꼈던 감동을 집 안에서 다시금 생생하게 체험해보세요. <br>
+							여행지에서 느꼈던 그 맛과 향, 그리고 기쁨은 단조롭고 익숙한 공간에 활기를 불어넣어 줄 것입니다.</h4> 
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<h2><em><b>우리는 당신의 ‘풍요’를 응원합니다.</b></em></h2> 
+						<h4>급변하는 환경 속, 바쁜 일상을 살아가며 종종 나 자신을 잊곤 합니다. <br>
+							지치고 고단한 하루의 끝자락에서, 호텔 인 홈은 그런 당신에게 몸과 마음의 휴식과 치유를 선사할 것입니다. <br>
+							오랫동안 잊고 있었던 여유를 스스로에게 선물해보는 것은 어떨까요? 롯데 호텔에서의 우아하고 느긋한 식사 시간을 집에서도 느껴보세요. <br>
+							눈과 입을 감동시키는 일류 셰프의 최고급 요리들. 무엇을 상상하든 그 이상의 경험을 제공합니다. <br>
+							순간을 찬란하고 편안한 기억들로 채우길 바라며, 누구보다 특별한 당신을 위해 호텔 인 홈은 맛의 향연과 아름다운 순간을 재현하겠습니다.</h4> 
+					</body>
 						<a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a>
-					</div>
-				</div>
-				<div class="col-md-12">
-					<div class="inner-pt">
-						<p>Sed tincidunt, neque at egestas imperdiet, nulla sapien blandit nunc, sit amet pulvinar orci nibh ut massa. Proin nec lectus sed nunc placerat semper. Duis hendrerit elit nec sapien porttitor, ut pretium ipsum feugiat. Aenean volutpat porta nisi in gravida. Curabitur pulvinar ligula sed facilisis bibendum. Nullam vitae nulla elit. </p>
-						<p>Integer purus velit, eleifend eu magna volutpat, porttitor blandit lectus. Aenean risus odio, efficitur quis erat eget, mattis tristique arcu. Fusce in ante enim. Integer consectetur elit nec laoreet rutrum. Mauris porta turpis nec tellus accumsan pellentesque. Morbi non quam tempus, convallis urna in, cursus mauris. </p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- End About -->
-	
-	<!-- Start Menu -->
-	<div class="menu-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="heading-title text-center">
-						<h2>Special Menu</h2>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="special-menu text-center">
-						<div class="button-group filter-button-group">
-							<button class="active" data-filter="*">All</button>
-							<button data-filter=".drinks">Drinks</button>
-							<button data-filter=".lunch">Lunch</button>
-							<button data-filter=".dinner">Dinner</button>
-						</div>
-					</div>
-				</div>
-			</div>
-				
-			<div class="row special-list">
-				<div class="col-lg-4 col-md-6 special-grid drinks">
-					<div class="gallery-single fix">
-						<img src="{% static 'images/img-01.jpg' %}" class="img-fluid" alt="Image">
-						<div class="why-text">
-							<h4>Special Drinks 1</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $7.79</h5>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 special-grid drinks">
-					<div class="gallery-single fix">
-						<img src="{% static 'images/img-02.jpg' %}" class="img-fluid" alt="Image">
-						<div class="why-text">
-							<h4>Special Drinks 2</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $9.79</h5>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 special-grid drinks">
-					<div class="gallery-single fix">
-						<img src="{% static 'images/img-03.jpg' %}" class="img-fluid" alt="Image">
-						<div class="why-text">
-							<h4>Special Drinks 3</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $10.79</h5>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 special-grid lunch">
-					<div class="gallery-single fix">
-						<img src="{% static 'images/img-04.jpg' %}" class="img-fluid" alt="Image">
-						<div class="why-text">
-							<h4>Special Lunch 1</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $15.79</h5>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 special-grid lunch">
-					<div class="gallery-single fix">
-						<img src="{% static 'images/img-05.jpg' %}" class="img-fluid" alt="Image">
-						<div class="why-text">
-							<h4>Special Lunch 2</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $18.79</h5>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 special-grid lunch">
-					<div class="gallery-single fix">
-						<img src="{% static 'images/img-06.jpg' %}" class="img-fluid" alt="Image">
-						<div class="why-text">
-							<h4>Special Lunch 3</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $20.79</h5>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 special-grid dinner">
-					<div class="gallery-single fix">
-						<img src="{% static 'images/img-07.jpg' %}" class="img-fluid" alt="Image">
-						<div class="why-text">
-							<h4>Special Dinner 1</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $25.79</h5>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 special-grid dinner">
-					<div class="gallery-single fix">
-						<img src="{% static 'images/img-08.jpg' %}" class="img-fluid" alt="Image">
-						<div class="why-text">
-							<h4>Special Dinner 2</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $22.79</h5>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 special-grid dinner">
-					<div class="gallery-single fix">
-						<img src="{% static 'images/img-09.jpg' %}" class="img-fluid" alt="Image">
-						<div class="why-text">
-							<h4>Special Dinner 3</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
-							<h5> $24.79</h5>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</div>
-	<!-- End Menu -->
-	
+
 	<!-- Start Contact info -->
 	<div class="contact-imfo-box">
 		<div class="container">

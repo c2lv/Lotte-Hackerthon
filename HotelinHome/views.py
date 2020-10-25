@@ -27,4 +27,18 @@ def reservation(request):
 
 def stuff(request):
     return render(request, 'stuff.html')
+
+def yeo(request):
+    return render(request, 'yeo_kyungok.html')
+
+def yannick(request):
+    return render(request, 'yannick_alleno.html')
+
+def pierre(request):
+    return render(request, 'pierre_gagnaire.html')
+
+def cheon(request):
+    return render(request, 'cheon_deoksang.html')
+
+    
     

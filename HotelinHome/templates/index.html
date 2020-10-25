@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
  
      <!-- Site Metas -->
-    <title>Yamifood Restaurant - Responsive HTML5 Template</title>  
+    <title> Welcome to visit 'Hotel in Home'! </title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -57,6 +57,10 @@
 								<a class="dropdown-item" href="{% url 'reservation' %}">Reservation</a>
 								<a class="dropdown-item" href="{% url 'stuff' %}">Stuff</a>
 								<a class="dropdown-item" href="{% url 'gallery' %}">Gallery</a>
+								<a class="dropdown-item" href="{% url 'cheon' %}">천덕상</a>
+								<a class="dropdown-item" href="{% url 'yeo' %}">여경옥</a>
+								<a class="dropdown-item" href="{% url 'yannick' %}">야닉알레노</a>
+								<a class="dropdown-item" href="{% url 'pierre' %}">피에르가니에르</a>
 							</div>
 						</li>
 						<li class="nav-item dropdown">
@@ -78,39 +82,36 @@
 	<div id="slides" class="cover-slides">
 		<ul class="slides-container">
 			<li class="text-center">
-				<img src="{% static 'images/slider-01.jpg' %}" alt="">
+				<img src="{% static 'images/background1.jpg' %}" alt="">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<h1 class="m-b-20"><strong>Welcome To <br> Yamifood Restaurant</strong></h1>
-							<p class="m-b-40">See how your users experience your website in realtime or view  <br> 
-							trends to see any changes in performance over time.</p>
+							<h1 class="m-b-20"><strong>Hotel in Home</strong></h1>
+							<p class="m-b-40">소중한 사람들에게, 사랑을 담아.</p>
 							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a></p>
 						</div>
 					</div>
 				</div>
 			</li>
 			<li class="text-center">
-				<img src="{% static 'images/slider-02.jpg' %}" alt="">
+				<img src="{% static 'images/background4.jpg' %}" alt="">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<h1 class="m-b-20"><strong>Welcome To <br> Yamifood Restaurant</strong></h1>
-							<p class="m-b-40">See how your users experience your website in realtime or view  <br> 
-							trends to see any changes in performance over time.</p>
+							<h1 class="m-b-20"><strong>Hotel in Home</strong></h1>
+							<p class="m-b-40">호텔 인 홈과 함께, 다시 한 번 자유의 순간을.</p>
 							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a></p>
 						</div>
 					</div>
 				</div>
 			</li>
 			<li class="text-center">
-				<img src="{% static 'images/slider-03.jpg' %}" alt="">
+				<img src="{% static 'images/background3.jpg' %}" alt="">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<h1 class="m-b-20"><strong>Welcome To <br> Yamifood Restaurant</strong></h1>
-							<p class="m-b-40">See how your users experience your website in realtime or view  <br> 
-							trends to see any changes in performance over time.</p>
+							<h1 class="m-b-20"><strong>Hotel in Home</strong></h1>
+							<p class="m-b-40">집에서 맞이하는, 보다 풍요로운 일상.</p>
 							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a></p>
 						</div>
 					</div>
@@ -129,14 +130,19 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-12">
-					<img src="{% static 'images/about-img.jpg' %}" alt="" class="img-fluid">
+					<img src="{% static 'images/background2.jpg' %}" alt="" class="img-fluid">
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-12 text-center">
 					<div class="inner-column">
-						<h1>Welcome To <span>Yamifood Restaurant</span></h1>
-						<h4>Little Story</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-						<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. Sed aliquam metus lorem, a pellentesque tellus pretium a. Nulla placerat elit in justo vestibulum, et maximus sem pulvinar.</p>
+						<h1>누구보다도 특별한 당신을 위한 프리미엄 서비스<span>, 호텔 인 홈</span></h1>
+						<h4>안녕하세요, “호텔 인 홈”입니다.</h4>
+						<p>설레는 여행의 마지막을 책임지는 호텔.<br>
+							머물던 시간은 짧아도, 좋았던 기억은 뇌리 속에 강렬하게 남아있습니다.<br>
+							그러나 포스트 코로나 시대를 살아가고 있는 요즘,<br>
+							여행을 가고 호텔에서 편안하게 쉬며, 맛있는 요리를 즐기는 것은 조금 먼 이야기가 되었습니다.<br>
+							‘호텔 인 홈’은 호텔에서 즐기던 요리들을 이제 호텔 밖, ‘집 안’에서도 즐길 수 있도록 한 서비스입니다.<br>
+							단순히 요리를 배달하는 것이 아닌 호텔에서의 감동과 행복의 경험을 집 안이라는 공간에서 재현하고자 합니다.<br>
+							일류 셰프들의 정성이 담긴 최고의 요리를, 이제는 집에서 만나보세요.
 						<a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a>
 					</div>
 				</div>

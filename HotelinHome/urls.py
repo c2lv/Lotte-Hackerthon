@@ -30,7 +30,11 @@ urlpatterns = [
     path('contact/', views.contact, name="contact"),
     path('gallery/', views.gallery, name="gallery"),
     path('menu/', views.menu, name="menu"),
-    path('reservation/', views.reservation, name="reservation"),
     path('stuff/', views.stuff, name="stuff"),
+    path('reservation/', views.reservation, name="reservation"),
+    path('yeo/', views.yeo, name="yeo"),
+    path('yannick/', views.yannick, name="yannick"),
+    path('pierre/', views.pierre, name="pierre"),
+    path('cheon/', views.cheon, name="cheon"),
 ]
 

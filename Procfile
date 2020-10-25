@@ -1,1 +1,1 @@
-web: gunicorn HotelinHome.wsgi
+web: gunicorn HotelinHome.wsgi --log-file -

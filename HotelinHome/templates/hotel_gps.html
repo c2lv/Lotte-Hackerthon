@@ -109,7 +109,8 @@
         
         <!--탬플릿의 Start Contact info부분 탬플릿은 뺴고 그 위치에 <div>내용 넣어주세요-->
         <div>
-            <h1>Check your location</h1>
+            <div class="inner-column">
+            <h1>호텔인 홈 <br><span>님의 위치를 확인하세요</span></h1><br><br>
 <!--h1 크기 키우고 가운데 정렬해주세요-->
             <p>호텔인홈님의 현재 위치는 <br>
             위도<span id="latitude"></span>, 경도<span id="longitude"></span>입니다.
@@ -117,6 +118,7 @@
             <br>
             <p>호텔인홈님의 위치에서 가장 가까운 호텔을 추천해드리겠습니다. 
                 <p><a href="{% url 'order' %}" class="btn btn-sm btn-primary">확인하기</a></p>
+            </div>
             <!--확인하기 버튼 누르면 hotel_order.html로 이동하게 해주세요!-->  
         </div>
     

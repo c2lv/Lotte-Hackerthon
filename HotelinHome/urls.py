@@ -36,9 +36,11 @@ urlpatterns = [
     path('yannick/', views.yannick, name="yannick"),
     path('pierre/', views.pierre, name="pierre"),
     path('cheon/', views.cheon, name="cheon"),
+    path('gps/', views.gps, name="gps"),
+    path('hotel/', views.hotel, name="hotel"),
+    path('order/', views.order, name="order"),
     path('posts/',include('posts.urls') ),
     path('pages/',include('pages.urls') ),
-
 
 ]
 

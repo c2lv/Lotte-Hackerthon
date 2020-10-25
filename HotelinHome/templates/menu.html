@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
  
      <!-- Site Metas -->
-    <title>Yamifood Restaurant - Responsive HTML5 Template</title>  
+    <title> Welcome to visit 'Hotel in Home'! </title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -37,6 +37,7 @@
 
 <body>
 	<!-- Start header -->
+	<!-- Start header -->
 	<header class="top-navbar">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">
@@ -52,11 +53,8 @@
 						<li class="nav-item"><a class="nav-link" href="{% url 'menu' %}">Menu</a></li>
 						<li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Pages</a>
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Chef</a>
 							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item" href="{% url 'reservation' %}">Reservation</a>
-								<a class="dropdown-item" href="{% url 'stuff' %}">Stuff</a>
-								<a class="dropdown-item" href="{% url 'gallery' %}">Gallery</a>
 								<a class="dropdown-item" href="{% url 'cheon' %}">천덕상</a>
 								<a class="dropdown-item" href="{% url 'yeo' %}">여경옥</a>
 								<a class="dropdown-item" href="{% url 'yannick' %}">야닉알레노</a>
@@ -64,13 +62,13 @@
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Blog</a>
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Hotel</a>
 							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item" href="{% url 'blog' %}">blog</a>
-								<a class="dropdown-item" href="{% url 'details' %}">blog Single</a>
+								<a class="dropdown-item" href="{% url 'hotel' %}">호텔</a>
+								<a class="dropdown-item" href="{% url 'gps' %}">호텔위치</a>
+								<a class="dropdown-item" href="{% url 'order' %}">호텔주문</a>
 							</div>
 						</li>
-						<li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -78,17 +76,17 @@
 	</header>
 	<!-- End header -->
 	
-	<!-- Start All Pages -->
+	<!-- Start header -->
 	<div class="all-page-title page-breadcrumb">
 		<div class="container text-center">
 			<div class="row">
 				<div class="col-lg-12">
-					<h1>Special Menu</h1>
+					<h1>Lotte Hotel restaurant's menu</h1>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- End All Pages -->
+	<!-- End header -->	
 	
 	<!-- Start Menu -->
 	<div class="menu-box">
@@ -96,8 +94,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="heading-title text-center">
-						<h2>Special Menu</h2>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+						<h2>Lotte Hotel restaurant's menu</h2>
 					</div>
 				</div>
 			</div>
@@ -106,9 +103,10 @@
 					<div class="special-menu text-center">
 						<div class="button-group filter-button-group">
 							<button class="active" data-filter="*">All</button>
-							<button data-filter=".drinks">Drinks</button>
-							<button data-filter=".lunch">Lunch</button>
-							<button data-filter=".dinner">Dinner</button>
+							<button data-filter=".drinks">한식</button>
+							<button data-filter=".lunch">중식</button>
+							<button data-filter=".dinner">양식</button>
+							<button data-filter=".dinner">베이커리</button>
 						</div>
 					</div>
 				</div>
@@ -117,10 +115,10 @@
 			<div class="row special-list">
 				<div class="col-lg-4 col-md-6 special-grid drinks">
 					<div class="gallery-single fix">
-						<img src="{% static 'images/img-01.jpg' %}" class="img-fluid" alt="Image">
+						<img src="{% static 'images/정갈한한상.jpg' %}" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Drinks 1</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
+							<h4>정갈한 한상1</h4>
+							<p>정갈하게 준비된 한정식 한상으로 바쁜 일상 속에서 여유를 느껴보시기 바랍니다.</p>
 							<h5> $7.79</h5>
 						</div>
 					</div>
@@ -128,10 +126,10 @@
 				
 				<div class="col-lg-4 col-md-6 special-grid drinks">
 					<div class="gallery-single fix">
-						<img src="{% static 'images/img-02.jpg' %}" class="img-fluid" alt="Image">
+						<img src="{% static 'images/새우완탕.jpg' %}" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Drinks 2</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
+							<h4>새우완탕</h4>
+							<p>진하게 우러나온 사골육수와 chef가 직접 만든 특별한 새우완자를 곁들여 맛보실 수 있습니다.</p>
 							<h5> $9.79</h5>
 						</div>
 					</div>
@@ -139,10 +137,10 @@
 				
 				<div class="col-lg-4 col-md-6 special-grid drinks">
 					<div class="gallery-single fix">
-						<img src="{% static 'images/img-03.jpg' %}" class="img-fluid" alt="Image">
+						<img src="{% static 'images/전복오골계탕.jpg' %}" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Drinks 3</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
+							<h4>전복 오골계탕</h4>
+							<p>신선한 전복과 오골계의 조화로운 맛을 느끼실 수 있습니다.</p>
 							<h5> $10.79</h5>
 						</div>
 					</div>
@@ -150,10 +148,10 @@
 				
 				<div class="col-lg-4 col-md-6 special-grid lunch">
 					<div class="gallery-single fix">
-						<img src="{% static 'images/img-04.jpg' %}" class="img-fluid" alt="Image">
+						<img src="{% static 'images/전복.png' %}" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Lunch 1</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
+							<h4>자연 송이 전복</h4>
+							<p>신선한 자연산 송이에 chef의 special sausce를 가미한 요리입니다.</p>
 							<h5> $15.79</h5>
 						</div>
 					</div>
@@ -161,10 +159,10 @@
 				
 				<div class="col-lg-4 col-md-6 special-grid lunch">
 					<div class="gallery-single fix">
-						<img src="{% static 'images/img-05.jpg' %}" class="img-fluid" alt="Image">
+						<img src="{% static 'images/자장면.png' %}" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Lunch 2</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
+							<h4>한우 자장면</h4>
+							<p>육즙이 살아있는 한우가 들어가 풍미로운 맛이 일품인 자장면입니다.</p>
 							<h5> $18.79</h5>
 						</div>
 					</div>
@@ -172,10 +170,10 @@
 				
 				<div class="col-lg-4 col-md-6 special-grid lunch">
 					<div class="gallery-single fix">
-						<img src="{% static 'images/img-06.jpg' %}" class="img-fluid" alt="Image">
+						<img src="{% static 'images/동파육.jpg' %}" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Lunch 3</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
+							<h4>흑돼지 동파육</h4>
+							<p>부드러운 흑돼지로 만든 고소한 동파육을 맛보실 수 있습니다.</p>
 							<h5> $20.79</h5>
 						</div>
 					</div>
@@ -183,10 +181,10 @@
 				
 				<div class="col-lg-4 col-md-6 special-grid dinner">
 					<div class="gallery-single fix">
-						<img src="{% static 'images/img-07.jpg' %}" class="img-fluid" alt="Image">
+						<img src="{% static 'images/모렐버섯.jpg' %}" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Dinner 1</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
+							<h4>모렐 버섯</h4>
+							<p>부드러운 양파 시럽은 물론 트러플과 가금류 무슬린을 채운 모렐 버섯 즐길 수 있습니다.</p>
 							<h5> $25.79</h5>
 						</div>
 					</div>
@@ -194,10 +192,10 @@
 				
 				<div class="col-lg-4 col-md-6 special-grid dinner">
 					<div class="gallery-single fix">
-						<img src="{% static 'images/img-08.jpg' %}" class="img-fluid" alt="Image">
+						<img src="{% static 'images/송아지갈비.jpg' %}" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Dinner 2</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
+							<h4>송아지 갈비</h4>
+							<p>가을 뿌리 채소 라구와 함께 "대지의 향기" 코코뜨에 익힌 송아지 갈비의 풍미를 느껴보시기 바랍니다.</p>
 							<h5> $22.79</h5>
 						</div>
 					</div>
@@ -205,11 +203,44 @@
 				
 				<div class="col-lg-4 col-md-6 special-grid dinner">
 					<div class="gallery-single fix">
-						<img src="{% static 'images/img-09.jpg' %}" class="img-fluid" alt="Image">
+						<img src="{% static 'images/가리비라비올.jpg' %}" class="img-fluid" alt="Image">
 						<div class="why-text">
-							<h4>Special Dinner 3</h4>
-							<p>Sed id magna vitae eros sagittis euismod.</p>
+							<h4>가리비 라비올</h4>
+							<p>가리비 라비올과 바다향의 허브 샐러드를 함께 맛보며 아름다운 조화를 느껴보시기 바랍니다.</p>
 							<h5> $24.79</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 special-grid dinner">
+					<div class="gallery-single fix">
+						<img src="{% static 'images/수란햄버거.jpg' %}" class="img-fluid" alt="Image">
+						<div class="why-text">
+							<h4>수란 햄버거</h4>
+							<p>햄버거 bun 사이에 자리잡은 수란으로 부드럽고 풍미있는 햄버거를 즐기실 수 있습니다.</p>
+							<h5> $22.79</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 special-grid dinner">
+					<div class="gallery-single fix">
+						<img src="{% static 'images/애프터눈티세트.jpg' %}" class="img-fluid" alt="Image">
+						<div class="why-text">
+							<h4>애프터눈 티 세트</h4>
+							<p>320년 전통을 자랑하는 다만프레트의 티와 프랑식식 애프터눈 티 세트, Le Gouter SIGNIEL을 음미해보시기 바랍니다.</p>
+							<h5> $22.79</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 special-grid dinner">
+					<div class="gallery-single fix">
+						<img src="{% static 'images/마카로니샐러드.jpg' %}" class="img-fluid" alt="Image">
+						<div class="why-text">
+							<h4>마카로니 샐러드</h4>
+							<p>일반 마카로니와 다르게 더 두껍고 풍성한 식감의 마카로니와 chef의 수제소스로 탄생한 특별한 샐러드를 맛보실 수 있습니다.</p>
+							<h5> $22.79</h5>
 						</div>
 					</div>
 				</div>
@@ -234,60 +265,7 @@
 	</div>
 	<!-- End QT -->
 	
-	<!-- Start Customer Reviews -->
-	<div class="customer-reviews-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="heading-title text-center">
-						<h2>Customer Reviews</h2>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-8 mr-auto ml-auto text-center">
-					<div id="reviews" class="carousel slide" data-ride="carousel">
-						<div class="carousel-inner mt-4">
-							<div class="carousel-item text-center active">
-								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="{% static 'images/profile-1.jpg' %}" alt="">
-								</div>
-								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Paul Mitchel</strong></h5>
-								<h6 class="text-dark m-0">Web Developer</h6>
-								<p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
-							</div>
-							<div class="carousel-item text-center">
-								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="{% static 'images/profile-3.jpg' %}" alt="">
-								</div>
-								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Steve Fonsi</strong></h5>
-								<h6 class="text-dark m-0">Web Designer</h6>
-								<p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
-							</div>
-							<div class="carousel-item text-center">
-								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="{% static 'images/profile-7.jpg' %}" alt="">
-								</div>
-								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Daniel vebar</strong></h5>
-								<h6 class="text-dark m-0">Seo Analyst</h6>
-								<p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
-							</div>
-						</div>
-						<a class="carousel-control-prev" href="#reviews" role="button" data-slide="prev">
-							<i class="fa fa-angle-left" aria-hidden="true"></i>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a class="carousel-control-next" href="#reviews" role="button" data-slide="next">
-							<i class="fa fa-angle-right" aria-hidden="true"></i>
-							<span class="sr-only">Next</span>
-						</a>
-                    </div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Customer Reviews -->
+
 	
 	<!-- Start Contact info -->
 	<div class="contact-imfo-box">

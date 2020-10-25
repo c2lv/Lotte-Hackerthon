@@ -37,6 +37,7 @@
 
 <body>
 	<!-- Start header -->
+	<!-- Start header -->
 	<header class="top-navbar">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">
@@ -52,11 +53,8 @@
 						<li class="nav-item"><a class="nav-link" href="{% url 'menu' %}">Menu</a></li>
 						<li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Pages</a>
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Chef</a>
 							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item" href="{% url 'reservation' %}">Reservation</a>
-								<a class="dropdown-item" href="{% url 'stuff' %}">Stuff</a>
-								<a class="dropdown-item" href="{% url 'gallery' %}">Gallery</a>
 								<a class="dropdown-item" href="{% url 'cheon' %}">천덕상</a>
 								<a class="dropdown-item" href="{% url 'yeo' %}">여경옥</a>
 								<a class="dropdown-item" href="{% url 'yannick' %}">야닉알레노</a>
@@ -64,13 +62,13 @@
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Blog</a>
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Hotel</a>
 							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item" href="{% url 'blog' %}">blog</a>
-								<a class="dropdown-item" href="{% url 'details' %}">blog Single</a>
+								<a class="dropdown-item" href="{% url 'hotel' %}">호텔</a>
+								<a class="dropdown-item" href="{% url 'gps' %}">호텔위치</a>
+								<a class="dropdown-item" href="{% url 'order' %}">호텔주문</a>
 							</div>
 						</li>
-						<li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
 					</ul>
 				</div>
 			</div>

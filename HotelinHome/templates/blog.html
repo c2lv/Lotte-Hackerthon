@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
  
      <!-- Site Metas -->
-    <title>Yamifood Restaurant - Responsive HTML5 Template</title>  
+    <title> Welcome to visit 'Hotel in Home'! </title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -37,6 +37,7 @@
 
 <body>
 	<!-- Start header -->
+	<!-- Start header -->
 	<header class="top-navbar">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">
@@ -52,11 +53,8 @@
 						<li class="nav-item"><a class="nav-link" href="{% url 'menu' %}">Menu</a></li>
 						<li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Pages</a>
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Chef</a>
 							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item" href="{% url 'reservation' %}">Reservation</a>
-								<a class="dropdown-item" href="{% url 'stuff' %}">Stuff</a>
-								<a class="dropdown-item" href="{% url 'gallery' %}">Gallery</a>
 								<a class="dropdown-item" href="{% url 'cheon' %}">천덕상</a>
 								<a class="dropdown-item" href="{% url 'yeo' %}">여경옥</a>
 								<a class="dropdown-item" href="{% url 'yannick' %}">야닉알레노</a>
@@ -64,13 +62,13 @@
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Blog</a>
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Hotel</a>
 							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item" href="{% url 'blog' %}">blog</a>
-								<a class="dropdown-item" href="{% url 'details' %}">blog Single</a>
+								<a class="dropdown-item" href="{% url 'hotel' %}">호텔</a>
+								<a class="dropdown-item" href="{% url 'gps' %}">호텔위치</a>
+								<a class="dropdown-item" href="{% url 'order' %}">호텔주문</a>
 							</div>
 						</li>
-						<li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -78,17 +76,17 @@
 	</header>
 	<!-- End header -->
 	
-	<!-- Start All Pages -->
+	<!-- Start header -->
 	<div class="all-page-title page-breadcrumb">
 		<div class="container text-center">
 			<div class="row">
 				<div class="col-lg-12">
-					<h1>Blog</h1>
+					<h1>Chefs in Lotte Hotel</h1>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- End All Pages -->
+	<!-- End header -->	
 	
 	<!-- Start blog -->
 	<div class="blog-box">
@@ -96,179 +94,71 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="heading-title text-center">
-						<h2>Blog</h2>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+						<h2>Chef</h2>
+						<p>Chefs in Lotte Hotel</p>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-4 col-md-6 col-12">
-					<div class="blog-box-inner">
-						<div class="blog-img-box">
-							<img class="img-fluid" src="{% static 'images/blog-img-01.jpg' %}" alt="">
-						</div>
+				<div class="card" style="width: 40rem; height: 40rem;">
+							<img src="{% static 'images/여경옥.jpg' %}" class="d-block w-100" alt="">
 						<div class="blog-detail">
-							<h4>Duis feugiat neque sed dolor cursus.</h4>
-							<ul>
-								<li><span>Post by Admin</span></li>
-								<li>|</li>
-								<li><span>27 February 2018</span></li>
-							</ul>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-							<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-							<a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Read More</a>
+							<h4>chef 여경옥</h4>
+							<p class="card-text">
+							팔진지미(八珍之味)는 옛날 중국에서 성대한 음식상에 갖춘다고 하는 진귀한 여덟
+							가지 음식의 아주 좋은 맛을 뜻합니다. 여경옥 chef는 '팔진진미'의 구현을 철학으로 하며, 
+							정교한 조리 기법을 통해 광동식, 북경식 요리의 정통성을 유지하고, 창의력을 가미해 최상의
+							맛을 표현합니다.
+							</p>
+							<input type="button" href="#" class="btn btn-secondary" value="좋아요"/>
+							<a class="btn btn-lg btn-circle btn-outline-new-white" href="{% url 'yeo' %}">상세보기</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-12">
-					<div class="blog-box-inner">
-						<div class="blog-img-box">
-							<img class="img-fluid" src="{% static 'images/blog-img-02.jpg' %}" alt="">
-						</div>
+				<div class="card" style="width: 40rem; height: 40rem;">
+							<img src="{% static 'images/피에르가니에르.jpg' %}" class="d-block w-100" alt="">
 						<div class="blog-detail">
-							<h4>Duis feugiat neque sed dolor cursus.</h4>
-							<ul>
-								<li><span>Post by Admin</span></li>
-								<li>|</li>
-								<li><span>27 February 2018</span></li>
-							</ul>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-							<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-							<a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Read More</a>
+							<h4>chef 피에르 가니에르</h4>
+							<p>
+							피에르 가니에르는 혁신적인 실험정신과 예술적 감각으로 정통 프렌치 요리를 재탄생시킨 chef입니다. 
+							신의 즐기는 요리, 요리계의 피카소, 식탁의 시인 등 경의에 가까운 찬사를 받으며 프랑스
+							요리의 지존으로 칭송받고 있으며 식재료의 조직과 질감을 과학적 분석을 통해 다양한
+							조리법을 개발하였고 이를 바탕으로 한 선과 색을 살린 예술적인 동시에 독창적인 요리를 선보입니다.
+							</p>
+							<input type="button" href="#" class="btn btn-secondary" value="좋아요"/>
+							<a class="btn btn-lg btn-circle btn-outline-new-white" href="{% url 'pierre' %}">상세보기</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-12">
-					<div class="blog-box-inner">
-						<div class="blog-img-box">
-							<img class="img-fluid" src="{% static 'images/blog-img-03.jpg' %}" alt="">
-						</div>
+				<div class="card" style="width: 40rem; height: 40rem;">
+							<img src="{% static 'images/천덕상.png' %}" class="d-block w-100" alt="">
 						<div class="blog-detail">
-							<h4>Duis feugiat neque sed dolor cursus.</h4>
-							<ul>
-								<li><span>Post by Admin</span></li>
-								<li>|</li>
-								<li><span>27 February 2018</span></li>
-							</ul>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-							<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-							<a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Read More</a>
+							<h4>chef 천덕상</h4>
+							<p>
+							천덕상 chef는 최초로 한국음식을 고급코스화한 한식의 대가입니다.  
+							입으로 구전되어 내려오던 한식을 현대적인 시각에서 재해석하여 여러 개의 요리
+							특허를 보유하고 있습니다. 고급적이고 깔끔한 한식 요리를 즐기실 수 있습니다.
+							</p>
+							<input type="button" href="#" class="btn btn-secondary" value="좋아요"/>
+							<a class="btn btn-lg btn-circle btn-outline-new-white" href="{% url 'cheon' %}">상세보기</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-12">
-					<div class="blog-box-inner">
-						<div class="blog-img-box">
-							<img class="img-fluid" src="{% static 'images/blog-img-04.jpg' %}" alt="">
+				<div class="card" style="width: 40rem; height: 40rem;">
+							<img src="{% static 'images/야닉알레노.jpg' %}" class="d-block w-100" alt="">
 						</div>
 						<div class="blog-detail">
-							<h4>Duis feugiat neque sed dolor cursus.</h4>
-							<ul>
-								<li><span>Post by Admin</span></li>
-								<li>|</li>
-								<li><span>27 February 2018</span></li>
-							</ul>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-							<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-							<a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Read More</a>
+							<h4>chef 야닉 알레노</h4>
+							<p>
+							야닉 알레노 chef는 2019년 기준 청 8개의 미쉐린 스타를 얻었으며 전 
+							세계 유일의 3스타 레스토랑 두 곳을 동시에 등재시킨 chef입니다. 프랑스 
+							현지의 트렌드를 한국의 제철 식재료에 접목한 다양한 요리를 즐기실 수 있습니다. 
+							</p>
+							<input type="button" href="#" class="btn btn-secondary" value="좋아요"/>
+							<a class="btn btn-lg btn-circle btn-outline-new-white" href="{% url 'yannick' %}">상세보기</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-12">
-					<div class="blog-box-inner">
-						<div class="blog-img-box">
-							<img class="img-fluid" src="{% static 'images/blog-img-05.jpg' %}" alt="">
-						</div>
-						<div class="blog-detail">
-							<h4>Duis feugiat neque sed dolor cursus.</h4>
-							<ul>
-								<li><span>Post by Admin</span></li>
-								<li>|</li>
-								<li><span>27 February 2018</span></li>
-							</ul>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-							<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-							<a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-12">
-					<div class="blog-box-inner">
-						<div class="blog-img-box">
-							<img class="img-fluid" src="{% static 'images/blog-img-06.jpg' %}" alt="">
-						</div>
-						<div class="blog-detail">
-							<h4>Duis feugiat neque sed dolor cursus.</h4>
-							<ul>
-								<li><span>Post by Admin</span></li>
-								<li>|</li>
-								<li><span>27 February 2018</span></li>
-							</ul>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-							<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-							<a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-12">
-					<div class="blog-box-inner">
-						<div class="blog-img-box">
-							<img class="img-fluid" src="{% static 'images/blog-img-07.jpg' %}" alt="">
-						</div>
-						<div class="blog-detail">
-							<h4>Duis feugiat neque sed dolor cursus.</h4>
-							<ul>
-								<li><span>Post by Admin</span></li>
-								<li>|</li>
-								<li><span>27 February 2018</span></li>
-							</ul>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-							<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-							<a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-12">
-					<div class="blog-box-inner">
-						<div class="blog-img-box">
-							<img class="img-fluid" src="{% static 'images/blog-img-08.jpg' %}" alt="">
-						</div>
-						<div class="blog-detail">
-							<h4>Duis feugiat neque sed dolor cursus.</h4>
-							<ul>
-								<li><span>Post by Admin</span></li>
-								<li>|</li>
-								<li><span>27 February 2018</span></li>
-							</ul>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-							<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-							<a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-12">
-					<div class="blog-box-inner">
-						<div class="blog-img-box">
-							<img class="img-fluid" src="{% static 'images/blog-img-09.jpg' %}" alt="">
-						</div>
-						<div class="blog-detail">
-							<h4>Duis feugiat neque sed dolor cursus.</h4>
-							<ul>
-								<li><span>Post by Admin</span></li>
-								<li>|</li>
-								<li><span>27 February 2018</span></li>
-							</ul>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
-							<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
-							<a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Read More</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End blog -->
-	
+				
 	<!-- Start Contact info -->
 	<div class="contact-imfo-box">
 		<div class="container">

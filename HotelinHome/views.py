@@ -40,5 +40,14 @@ def pierre(request):
 def cheon(request):
     return render(request, 'cheon_deoksang.html')
 
+def gps(request):
+    return render(request, 'hotel_gps.html')
+
+def hotel(request):
+    return render(request, 'hotel_main.html')
+
+def order(request):
+    return render(request, 'hotel_order.html')
+
     
     

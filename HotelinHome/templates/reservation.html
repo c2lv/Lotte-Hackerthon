@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
  
      <!-- Site Metas -->
-    <title>Yamifood Restaurant - Responsive HTML5 Template</title>  
+    <title> Welcome to visit 'Hotel in Home'! </title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -23,10 +23,6 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">    
 	<!-- Site CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">    
-	<!-- Pickadate CSS -->
-    <link rel="stylesheet" href="{% static 'css/classic.css' %}">    
-	<link rel="stylesheet" href="{% static 'css/classic.date.css' %}">    
-	<link rel="stylesheet" href="{% static 'css/classic.time.css' %}">    
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
     <!-- Custom CSS -->
@@ -40,6 +36,7 @@
 </head>
 
 <body>
+	<!-- Start header -->
 	<!-- Start header -->
 	<header class="top-navbar">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -56,11 +53,8 @@
 						<li class="nav-item"><a class="nav-link" href="{% url 'menu' %}">Menu</a></li>
 						<li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Pages</a>
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Chef</a>
 							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item" href="{% url 'reservation' %}">Reservation</a>
-								<a class="dropdown-item" href="{% url 'stuff' %}">Stuff</a>
-								<a class="dropdown-item" href="{% url 'gallery' %}">Gallery</a>
 								<a class="dropdown-item" href="{% url 'cheon' %}">천덕상</a>
 								<a class="dropdown-item" href="{% url 'yeo' %}">여경옥</a>
 								<a class="dropdown-item" href="{% url 'yannick' %}">야닉알레노</a>
@@ -68,13 +62,13 @@
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Blog</a>
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Hotel</a>
 							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item" href="{% url 'blog' %}">blog</a>
-								<a class="dropdown-item" href="{% url 'details' %}">blog Single</a>
+								<a class="dropdown-item" href="{% url 'hotel' %}">호텔</a>
+								<a class="dropdown-item" href="{% url 'gps' %}">호텔위치</a>
+								<a class="dropdown-item" href="{% url 'order' %}">호텔주문</a>
 							</div>
 						</li>
-						<li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -82,7 +76,7 @@
 	</header>
 	<!-- End header -->
 	
-	<!-- Start All Pages -->
+	<!-- Start header -->
 	<div class="all-page-title page-breadcrumb">
 		<div class="container text-center">
 			<div class="row">
@@ -92,7 +86,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- End All Pages -->
+	<!-- End header -->
 	
 	<!-- Start Reservation -->
 	<div class="reservation-box">

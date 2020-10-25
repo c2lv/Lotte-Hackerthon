@@ -1,0 +1,123 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title> Welcome to visit 'Hotel in Home'! </title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">    
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+	<!-- Start header -->
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="{% url 'index' %}">
+					<img src="{% static 'images/logo.png' %}" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-rs-food">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="{% url 'menu' %}">Menu</a></li>
+						<li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Chef</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="{% url 'cheon' %}">천덕상</a>
+								<a class="dropdown-item" href="{% url 'yeo' %}">여경옥</a>
+								<a class="dropdown-item" href="{% url 'yannick' %}">야닉알레노</a>
+								<a class="dropdown-item" href="{% url 'pierre' %}">피에르가니에르</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Hotel</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="{% url 'hotel' %}">호텔</a>
+								<a class="dropdown-item" href="{% url 'gps' %}">호텔위치</a>
+								<a class="dropdown-item" href="{% url 'order' %}">호텔주문</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<!-- Start header -->
+	<div class="all-page-title page-breadcrumb">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>Hotel's locations</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End header -->	
+	
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Destination from Hotel_me_gps</title>
+    <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+    <script>
+        $(function() {        
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition (function(pos) {
+                    $('#latitude').html(pos.coords.latitude);
+                    $('#longitude').html(pos.coords.longitude); 
+                });
+            } else {
+                alert("이 브라우저에서는 Geolocation이 지원되지 않습니다.")
+            }
+        });
+    </script>
+        <!-- 탬플릿의 contact 페이지에 넣어주세요-->
+        
+        <!--탬플릿의 Start Contact info부분 탬플릿은 뺴고 그 위치에 <div>내용 넣어주세요-->
+        <div>
+            <h1>Check your location</h1>
+<!--h1 크기 키우고 가운데 정렬해주세요-->
+            <p>호텔인홈님의 현재 위치는 <br>
+            위도<span id="latitude"></span>, 경도<span id="longitude"></span>입니다.
+            <br>
+            <br>
+            <p>호텔인홈님의 위치에서 가장 가까운 호텔을 추천해드리겠습니다. 
+                <input type="button" href="#" class="btn btn-secondary" value="확인하기"/>        
+            <!--확인하기 버튼 누르면 hotel_order.html로 이동하게 해주세요!-->  
+        </div>
+</body>
+</html>
+

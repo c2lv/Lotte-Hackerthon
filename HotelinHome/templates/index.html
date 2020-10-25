@@ -87,7 +87,7 @@
 						<div class="col-md-12">
 							<h1 class="m-b-20"><strong>Hotel in Home</strong></h1>
 							<p class="m-b-40">소중한 사람들에게, 사랑을 담아.</p>
-							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="{% url 'reservation' %}">Reservation</a></p>
+							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a></p>
 						</div>
 					</div>
 				</div>
@@ -99,7 +99,7 @@
 						<div class="col-md-12">
 							<h1 class="m-b-20"><strong>Hotel in Home</strong></h1>
 							<p class="m-b-40">호텔 인 홈과 함께, 다시 한 번 자유의 순간을.</p>
-							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="{% url 'reservation' %}">Reservation</a></p>
+							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a></p>
 						</div>
 					</div>
 				</div>
@@ -111,7 +111,7 @@
 						<div class="col-md-12">
 							<h1 class="m-b-20"><strong>Hotel in Home</strong></h1>
 							<p class="m-b-40">집에서 맞이하는, 보다 풍요로운 일상.</p>
-							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="{% url 'reservation' %}">Reservation</a></p>
+							<p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a></p>
 						</div>
 					</div>
 				</div>
@@ -142,7 +142,7 @@
 							‘호텔 인 홈’은 호텔에서 즐기던 요리들을 이제 호텔 밖, ‘집 안’에서도 즐길 수 있도록 한 서비스입니다.<br>
 							단순히 요리를 배달하는 것이 아닌 호텔에서의 감동과 행복의 경험을 집 안이라는 공간에서 재현하고자 합니다.<br>
 							일류 셰프들의 정성이 담긴 최고의 요리를, 이제는 집에서 만나보세요.<br>
-						<a class="btn btn-lg btn-circle btn-outline-new-white" href="{% url 'reservation' %}">Reservation</a>
+						<a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a>
 					</div>
 				</div>
 			</div>
@@ -343,13 +343,75 @@
 	</div>
 	<!-- End Gallery -->
 	
+	<!-- Start Customer Reviews -->
+	<div class="customer-reviews-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="heading-title text-center">
+						<h2>Hotel in home Developers</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 mr-auto ml-auto text-center">
+					<div id="reviews" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner mt-4">
+							<div class="carousel-item text-center active">
+								<div class="img-box p-1 border rounded-circle m-auto">
+								</div>
+								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Park HJ</strong></h5>
+								<h6 class="text-dark m-0">Web Developer</h6>
+							</div>
+							<div class="carousel-item text-center">
+								<div class="img-box p-1 border rounded-circle m-auto">
+								</div>
+								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">LEE SJ</strong></h5>
+								<h6 class="text-dark m-0">Web Develope</h6>
+							</div>
+							<div class="carousel-item text-center">
+								<div class="img-box p-1 border rounded-circle m-auto">
+								</div>
+								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">LEE YE</strong></h5>
+								<h6 class="text-dark m-0">Web Develope</h6>
+							</div>
+							<div class="carousel-item text-center">
+								<div class="img-box p-1 border rounded-circle m-auto">
+								</div>
+								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">LEE HS</strong></h5>
+								<h6 class="text-dark m-0">Web Develope</h6>
+							</div>
+							<div class="carousel-item text-center">
+								<div class="img-box p-1 border rounded-circle m-auto">
+								</div>
+								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">KIM DY</strong></h5>
+								<h6 class="text-dark m-0">Web Develope</h6>
+							</div>
+
+
+						</div>
+						<a class="carousel-control-prev" href="#reviews" role="button" data-slide="prev">
+							<i class="fa fa-angle-left" aria-hidden="true"></i>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#reviews" role="button" data-slide="next">
+							<i class="fa fa-angle-right" aria-hidden="true"></i>
+							<span class="sr-only">Next</span>
+						</a>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Customer Reviews -->
+	
 	<!-- Start Footer -->
 	<footer class="footer-area bg-f">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 col-md-6">
 					<h3>About Us</h3>
-					<P>HOTEL IN HOME. 맛있는 음식을 가까히서 느끼세요.</P>
+					<P>HOTEL IN HOME.<br> 맛있는 음식을 가까이서 느끼세요.</P>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<h3>Order hours</h3>
@@ -362,7 +424,7 @@
 					<h3>Contact information</h3>
 					<p class="lead">Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
 					<p class="lead"><a href="#">+01 2000 800 9999</a></p>
-					<p><a href="#"> dongdaemutsa@admin.com</a></p>
+					<p><a href="#"> info@admin.com</a></p>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<h3>Subscribe</h3>

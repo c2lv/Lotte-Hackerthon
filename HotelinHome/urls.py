@@ -36,5 +36,8 @@ urlpatterns = [
     path('yannick/', views.yannick, name="yannick"),
     path('pierre/', views.pierre, name="pierre"),
     path('cheon/', views.cheon, name="cheon"),
+    path('posts/',include('posts.urls') ),
+
 ]
 
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

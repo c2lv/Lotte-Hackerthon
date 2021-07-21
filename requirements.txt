@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 alembic==1.6.5
 appdirs==1.4.4
 asgiref==3.3.1
@@ -92,3 +93,14 @@ virtualenv-clone==0.5.4
 Werkzeug==1.0.1
 wrapt==1.12.1
 WTForms==2.3.3
+=======
+asgiref==3.3.0
+dj-database-url==0.5.0
+Django==3.0.7
+gunicorn==20.0.4
+Pillow==8.0.1
+psycopg2-binary==2.8.6
+pytz==2020.1
+sqlparse==0.4.1
+whitenoise==5.2.0
+>>>>>>> 3e62185f2705f34c354a61f76da49b37e27850ff

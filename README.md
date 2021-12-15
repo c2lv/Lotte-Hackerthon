@@ -31,6 +31,7 @@
 - [pipenv](https://github.com/pypa/pipenv) :  Python.org에서 공식적으로 권장하는 패키지 설치 툴 및 가상환경 구현용 프로그램
 
 ## 3. 서버 실행
+
 ```
 $ python manage.py runserver 
 ```
@@ -40,10 +41,6 @@ $ python manage.py runserver
 .gitignore
 
 - Git 관련 환경변수 파일
-
-requirements.txt
-
-- 파이썬 라이브러리 종속성 파일
 
 ## 5. 배포
 
